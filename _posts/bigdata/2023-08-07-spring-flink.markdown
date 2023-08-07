@@ -217,7 +217,7 @@ public class ExampleComponent{
 ```  
 ## D.节点和算子管理  
 在SpringFlink框架中，一个典型的ETL流水线由多个节点组成，节点可以分为Extract节点、Transform节点和Load节点。其中Transform节点一般会调用算子来实现特定的转换逻辑。因此节点和算子是SpringFlink ETL流水线的核心组件。一个SpringFlink ETL流水线示例如下图所示：  
-![](https://cdn.nlark.com/yuque/0/2023/jpeg/21518077/1678525376354-b3941ae2-3f73-468c-9b72-dfd5fc88f2f4.jpeg)  
+![](https://github.com/QinXiaodong/qinxiaodong.github.io/raw/master/imgs/springflink/1.png)  
 其中，  
 ExtractKafkaNode中负责抽取Kafka数据源。  
 StringToRowNode负责将从Kafka数据源中消费到的String类型数据对象转换成Row类型数据对象，具体的转换操作有PrePF算子执行。  
@@ -399,7 +399,7 @@ kafka.catalogName=kafkaCatalog
 ```  
 ## D.装配流水线  
 在gereral库中定义节点和算子的公共执行逻辑，在job库中实现算子的完整定义。网络流量监控的样例作业对应的ETL流水线定义如图所示。  
-![](https://cdn.nlark.com/yuque/0/2023/jpeg/21518077/1676880045014-b08bffda-504c-49fc-9b22-c82cd330a365.jpeg)  
+![](https://github.com/QinXiaodong/qinxiaodong.github.io/raw/master/imgs/springflink/1.png)  
   
 # 结论  
 本文的主要贡献是SpringFlink，一个基于Spring的Flink ETL开发框架。我们介绍了SpringFlink的设计思想和具体实现，以及一个项目案例。更多使用场景可以在我们的代码仓库获取。SpringFlink一方面基于Spring Framework的IoC特性简化了作业配置管理、元数据管理和流水线装配；另一方面通过抽象公共逻辑，延迟补全节点和算子逻辑降低了新ETL流水线的开发成本，增强了现有ETL流水线的扩展性和可维护性。  
