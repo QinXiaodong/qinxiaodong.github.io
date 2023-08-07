@@ -346,7 +346,7 @@ AnnotationConfigApplicationContext context =
 ```  
 ## B.定义作业配置  
 对程序易变配置和稳定配置进行定义，并完善相应的作业配置类。  
-```json  
+``` 
 # metadata  
 meta.source=meta/dataSource/example_data_source.json  
 meta.ods=meta/ods/ods_example_h_inc.json  
