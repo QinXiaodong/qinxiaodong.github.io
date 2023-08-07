@@ -399,7 +399,7 @@ kafka.catalogName=kafkaCatalog
 ```  
 ## D.装配流水线  
 在gereral库中定义节点和算子的公共执行逻辑，在job库中实现算子的完整定义。网络流量监控的样例作业对应的ETL流水线定义如图所示。  
-![](https://github.com/QinXiaodong/qinxiaodong.github.io/raw/master/imgs/springflink/1.png)  
+![](https://github.com/QinXiaodong/qinxiaodong.github.io/raw/master/imgs/springflink/2.png)  
   
 # 结论  
 本文的主要贡献是SpringFlink，一个基于Spring的Flink ETL开发框架。我们介绍了SpringFlink的设计思想和具体实现，以及一个项目案例。更多使用场景可以在我们的代码仓库获取。SpringFlink一方面基于Spring Framework的IoC特性简化了作业配置管理、元数据管理和流水线装配；另一方面通过抽象公共逻辑，延迟补全节点和算子逻辑降低了新ETL流水线的开发成本，增强了现有ETL流水线的扩展性和可维护性。  
